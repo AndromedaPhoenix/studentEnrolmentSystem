@@ -13,5 +13,9 @@ public class Main {
 
         System.out.println("\nProcessing waitlist...");
         c1.processWaitlist();
+
+        //testing displayInfo method
+        s1.displayInfo();
+        s2.displayInfo();
     }
 }
