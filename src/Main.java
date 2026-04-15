@@ -6,6 +6,7 @@ public class Main {
         Student s3 = new Student("S125", "Pranita", "pranita@email.com");
 
         Course c1 = new Course("ITS206", "Software Construction", 2);
+        Course c2 = new Course("ITS205", "Software Engineering", 2);
 
         c1.enrolStudent(s1);
         c1.enrolStudent(s2);
@@ -17,5 +18,9 @@ public class Main {
         //testing displayInfo method
         s1.displayInfo();
         s2.displayInfo();
+
+        //testing display course details
+        c1.displayCourseDetails();
+        c2.displayCourseDetails();
     }
 }
