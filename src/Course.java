@@ -29,6 +29,12 @@ public class Course {
         this.enrolledStudents = new ArrayList<>();
         this.waitlist = new waitlist();
     }
+   //adding toString() to convert course attribute from enrolment class to redable format
+   @Override
+   public String toString() {
+       return courseCode + " - " + courseName;
+   }
+
 
     //Display course details with it's name, code and capacity
    /** public void displayCourseDetails() {

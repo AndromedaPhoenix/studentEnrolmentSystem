@@ -22,5 +22,16 @@ public class Main {
         //testing display course details
         c1.displayCourseDetails();
         c2.displayCourseDetails();
+
+        //testing enrolmentDisplay details :
+
+        Enrolment e1 = new Enrolment(s1,c1);
+        Enrolment e2 = new Enrolment(s2,c1);
+        Enrolment e3 = new Enrolment(s3,c1); // seeing whether this method shows faulty details or not.
+
+        e1.displayEnrolmentDetails();
+        e2.displayEnrolmentDetails();
+        e3.displayEnrolmentDetails();
+
     }
 }
