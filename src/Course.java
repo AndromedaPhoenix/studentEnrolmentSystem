@@ -16,6 +16,7 @@ public class Course {
     //A separate waitlist to store the students if the current course is full
     private waitlist waitlist;
 
+
     /**
      * Constructor initilises a new course with it's given details.
      * @param courseCode
@@ -34,7 +35,10 @@ public class Course {
    public String toString() {
        return courseCode + " - " + courseName;
    }
-
+    // adding getter for waitlist to display waitlist
+    public waitlist getWaitlist() {
+        return waitlist;
+    }
 
     //Display course details with it's name, code and capacity
    /** public void displayCourseDetails() {
