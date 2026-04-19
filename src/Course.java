@@ -62,7 +62,7 @@ public class Course {
      * if not student is added to the waitlist.
      * @param student
      */
-    public void enrolStudent(Student student) {
+   /** public void enrolStudent(Student student) {
         if (enrolledStudents.size() < maxCapacity) {
             enrolledStudents.add(student);
             System.out.println(student.getName() + " successfully enrolled.");
@@ -71,6 +71,26 @@ public class Course {
             waitlist.addToWaitlist(student);
         }
     }
+    */
+   public void enrolStudent(Student student) {
+       if (enrolledStudents.size() < maxCapacity) {
+           enrolledStudents.add(student);
+           System.out.println("┌──────────────────────────────────┐");
+           System.out.println("│        ENROLMENT SUCCESS         │");
+           System.out.println("├──────────────────────────────────┤");
+           System.out.println("│ Student : " + student.getName());
+           System.out.println("│ Status  : Enrolled");
+           System.out.println("└──────────────────────────────────┘");
+       } else {
+           System.out.println("┌──────────────────────────────────┐");
+           System.out.println("│          COURSE IS FULL          │");
+           System.out.println("├──────────────────────────────────┤");
+           System.out.println("│ Student : " + student.getName());
+           System.out.println("│ Status  : Added to Waitlist");
+           System.out.println("└──────────────────────────────────┘");
+           waitlist.addToWaitlist(student);
+       }
+   }
 
     /**
      * This method put back waiting student to the course if the sit is available
